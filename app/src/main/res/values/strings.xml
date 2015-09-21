@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPS Switcher</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="reboot">Reboot</string>
+    <string name="switch_gps_dialog_device">Device</string>
+    <string name="switch_gps_dialog_library">Library type</string>
+    <string name="switch_gps_dialog_library_mst_patched">mst_patched</string>
+    <string name="switch_gps_dialog_library_universal">generic</string>
+    <string name="switch_gps_dialog_library_universal_gnss">generic_gnss</string>
+    <string name="switch_gps_dialog_speed">Speed</string>
+    <string name="switch_gps_dialog_title">Change GPS source</string>
+	<string name="close">Close</string>
+	<string name="external">External</string>
+	<string name="internal">Internal</string>
+</resources>

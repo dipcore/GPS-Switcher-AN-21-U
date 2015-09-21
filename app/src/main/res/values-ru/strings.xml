@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="apply">Применить</string>
+    <string name="cancel">Отмена</string>
+    <string name="reboot">Перезагрузка</string>
+    <string name="switch_gps_dialog_device">Устройство</string>
+    <string name="switch_gps_dialog_library">Тип библиотеки</string>
+    <string name="switch_gps_dialog_speed">Скорость</string>
+    <string name="switch_gps_dialog_title">Настройка модуля GPS</string>
+	<string name="close">Закрыть</string>
+	<string name="external">Внешний\nGPS</string>
+	<string name="internal">Внутренний\nGPS</string>
+</resources>

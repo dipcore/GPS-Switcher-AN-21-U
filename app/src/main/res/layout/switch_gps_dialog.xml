@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/label_device" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/switch_gps_dialog_device" />
+            <Spinner android:id="@id/devSpinner" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Space android:layout_width="20.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/switch_gps_dialog_speed" />
+            <Spinner android:entries="@array/speed_array" android:id="@id/speedSpinner" android:padding="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/switch_gps_dialog_library" />
+    <RadioGroup android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+        <RadioButton android:textColor="#fff0f0f0" android:id="@id/universalGNSSRadioButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/switch_gps_dialog_library_universal_gnss" />
+        <RadioButton android:textColor="#fff0f0f0" android:id="@id/universalRadioButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:text="@string/switch_gps_dialog_library_universal" />
+        <RadioButton android:textColor="#fff0f0f0" android:id="@id/mstPatchedRadioButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/switch_gps_dialog_library_mst_patched" />
+    </RadioGroup>
+</LinearLayout>

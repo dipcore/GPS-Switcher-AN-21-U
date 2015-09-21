@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="454dp" android:layout_height="280dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:text="Developed by dipcore\ndipcore@gmail.com   "
+        android:textColor="#ff00ff19"
+        android:background="#ff131313"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:textSize="13dp"
+        android:gravity="center_vertical|right"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:text="GPS switcher"
+        android:textSize="23dp"
+        android:textColor="#ff00ff19"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/caption" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="178dp"
+        android:layout_marginTop="50dp">
+
+        <TextView android:textSize="17dp" android:textColor="#ff00ff19"
+            android:id="@+id/log" android:background="#ff131313"
+            android:layout_width="match_parent" android:layout_height="match_parent" android:lines="25"
+            android:layout_above="@id/linearLayout2" android:inputType="textNoSuggestions|textMultiLine"
+            android:padding="6dp"
+            android:gravity="bottom|clip_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp" />
+    </LinearLayout>
+
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+
+        <Button android:id="@id/button"
+            android:layout_width="113dp" android:layout_height="wrap_content" android:text="@string/internal" android:onClick="switchToInternalGPS"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:textColor="#ffffffff" />
+
+        <ImageSwitcher
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ff484848"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_marginTop="1dp" />
+
+        <Button android:id="@+id/button2"
+            android:layout_width="113dp" android:layout_height="wrap_content" android:text="@string/external" android:onClick="switchToExternalGPS"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:textColor="#ffffffff" />
+
+        <ImageSwitcher
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ff484848"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_marginTop="1dp" />
+
+        <Button android:id="@+id/button3"
+            android:layout_width="113dp" android:layout_height="wrap_content" android:text="@string/reboot" android:onClick="reboot"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:textColor="#ffffffff" />
+
+        <ImageSwitcher
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ff484848"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_marginTop="1dp"
+            android:id="@+id/imageSwitcher2" />
+
+        <Button android:id="@id/button4"
+            android:layout_width="113dp" android:layout_height="wrap_content" android:text="@string/close" android:onClick="close"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:textColor="#ffffffff" />
+
+    </LinearLayout>
+
+    <ImageSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ff484848"
+        android:layout_alignTop="@+id/linearLayout2" />
+
+</RelativeLayout>
